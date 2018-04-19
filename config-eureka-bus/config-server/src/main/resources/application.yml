@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/zhaoyibo/spring-cloud-study
+          search-paths: config-repo
+    bus:
+      enabled: true
+      trace:
+        enabled: true
+server:
+  port: 12000
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7000/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh

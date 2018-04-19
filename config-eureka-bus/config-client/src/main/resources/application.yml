@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: config-client
+  cloud:
+    bus:
+      trace:
+        enabled: true
+      enabled: true
+server:
+  port: 13000
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
