@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: eureka-producer
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10010/eureka/
+server:
+  port: 8010
