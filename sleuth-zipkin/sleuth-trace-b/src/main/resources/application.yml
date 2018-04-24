@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: trace-b
+  sleuth:
+    web:
+      client:
+        enabled: true
+    sampler:
+      probability: 1
+  zipkin:
+    base-url: http://localhost:9412/
+server:
+  port: 8081
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7000/eureka/
