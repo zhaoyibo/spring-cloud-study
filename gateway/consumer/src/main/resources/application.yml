@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: consumer
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7000/eureka/
+server:
+  port: 9000
+feign:
+  hystrix:
+    enabled: true
