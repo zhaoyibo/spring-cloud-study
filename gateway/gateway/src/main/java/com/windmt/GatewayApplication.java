@@ -25,7 +25,7 @@ public class GatewayApplication {
                                             .addResponseHeader("X-Response-Default-Foo", "Default-Bar"))
                              .uri("lb://CONSUMER")
                              .order(0)
-                             .id("customer_service")
+                             .id("fluent_customer_service")
                 )
                 .build();
         // @formatter:on
