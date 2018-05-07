@@ -2,17 +2,14 @@ package com.windmt;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.turbine.stream.EnableTurbineStream;
 
 /**
  * @author zhaoyibochn@gmail.com
  */
-@EnableTurbineStream
 @SpringBootApplication
-public class TurbineStreamRabbitmqApplication {
+public class ProducerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(TurbineStreamRabbitmqApplication.class, args);
+        SpringApplication.run(ProducerApplication.class, args);
     }
-
 }

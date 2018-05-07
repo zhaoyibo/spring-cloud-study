@@ -2,17 +2,16 @@ package com.windmt;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.turbine.stream.EnableTurbineStream;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 /**
  * @author zhaoyibochn@gmail.com
  */
-@EnableTurbineStream
+@EnableEurekaServer
 @SpringBootApplication
-public class TurbineStreamRabbitmqApplication {
+public class EurekaApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(TurbineStreamRabbitmqApplication.class, args);
+        SpringApplication.run(EurekaApplication.class, args);
     }
-
 }
