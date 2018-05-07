@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  * @description:
- * @author: zhaoyibochn@gmail.com
+ * @author: yibo
  * @create: 2018-04-18 09:48
  **/
 @FeignClient(name = "producer", fallback = HelloRemote.HelloHystrix.class)

@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @author: zhaoyibochn@gmail.com
+ * @author: yibo
  **/
 @RequestMapping("/hello")
 @RestController

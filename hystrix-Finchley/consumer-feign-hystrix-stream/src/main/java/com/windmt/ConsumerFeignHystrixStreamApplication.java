@@ -6,7 +6,7 @@ import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
- * @author zhaoyibochn@gmail.com
+ * @author yibo
  */
 @EnableFeignClients
 @EnableHystrix

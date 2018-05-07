@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.turbine.stream.EnableTurbineStream;
 
 /**
- * @author zhaoyibochn@gmail.com
+ * @author yibo
  */
 @EnableTurbineStream
 @SpringBootApplication

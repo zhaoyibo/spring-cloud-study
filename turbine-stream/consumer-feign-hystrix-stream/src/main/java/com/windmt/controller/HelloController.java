@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Date;
 
 /**
- * @author: zhaoyibochn@gmail.com
+ * @author: yibo
  **/
 @RestController
 @RequestMapping("/hello")

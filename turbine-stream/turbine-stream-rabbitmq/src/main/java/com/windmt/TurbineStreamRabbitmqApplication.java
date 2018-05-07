@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.integration.support.converter.ConfigurableCompositeMessageConverter;
 
 /**
- * @author zhaoyibochn@gmail.com
+ * @author yibo
  */
 @EnableTurbineStream
 @SpringBootApplication

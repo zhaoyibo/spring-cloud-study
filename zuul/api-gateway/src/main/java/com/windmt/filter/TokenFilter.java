@@ -6,7 +6,7 @@ import com.netflix.zuul.context.RequestContext;
 import javax.servlet.http.HttpServletRequest;
 
 /**
- * @author: zhaoyibochn@gmail.com
+ * @author: yibo
  * @create: 2018-04-23
  **/
 public class TokenFilter extends ZuulFilter {
