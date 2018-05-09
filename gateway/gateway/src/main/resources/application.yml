@@ -6,6 +6,8 @@ spring:
       discovery:
         locator:
           enabled: true
+      default-filters:
+        - Elapsed=true
       routes:
         - id: service_customer
           uri: lb://CONSUMER
