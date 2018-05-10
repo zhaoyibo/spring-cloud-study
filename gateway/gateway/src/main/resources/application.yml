@@ -6,8 +6,6 @@ spring:
       discovery:
         locator:
           enabled: true
-      default-filters:
-        - Elapsed=true
       routes:
         - id: service_customer
           uri: lb://CONSUMER
@@ -16,7 +14,22 @@ spring:
             - Path=/customer/**
           filters:
             - StripPrefix=1
+            # -------
+            - name: RequestRateLimiter
+              args:
+                key-resolver: "#{@remoteAddrKeyResolver}"
+                redis-rate-limiter.replenishRate: 1
+                redis-rate-limiter.burstCapacity: 5
+            # -------
             - AddResponseHeader=X-Response-Default-Foo, Default-Bar
+      default-filters:
+        - Elapsed=true
+  # -------
+  redis:
+    host: localhost
+    port: 6379
+    database: 0
+  # -------
 server:
   port: 10000
 eureka:
@@ -26,3 +39,9 @@ eureka:
 logging:
   level:
     org.springframework.cloud.gateway: debug
+    com.windmt.filter: debug
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
