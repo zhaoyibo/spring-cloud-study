@@ -7,8 +7,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import java.util.Date;
 
 /**
@@ -22,15 +20,11 @@ public class HelloController {
     HelloRemote helloRemote;
 
     @GetMapping("/{name}")
-    public String index(@PathVariable("name") String name, HttpServletRequest request, HttpServletResponse response) {
-        String time = new Date().toString();
-        String header = response.getHeader("X-Response-Test");
-        if (header != null && !header.isEmpty()) {
-            System.out.println("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
-        } else {
-            response.addHeader("X-Response-Test", time);
+    public String index(@PathVariable("name") String name) {
+        if ("null".equals(name)) {
+            throw new NullPointerException();
         }
-        return helloRemote.hello(name) + "\n" + time;
+        return helloRemote.hello(name) + "\n" + new Date().toString();
     }
 
 }

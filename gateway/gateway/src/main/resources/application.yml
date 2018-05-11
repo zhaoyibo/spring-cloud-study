@@ -22,6 +22,10 @@ spring:
                 redis-rate-limiter.burstCapacity: 5
             # -------
             - AddResponseHeader=X-Response-Default-Foo, Default-Bar
+            - name: Hystrix
+              args:
+                name: fallbackcmd
+                fallbackUri: forward:/fallback
       default-filters:
         - Elapsed=true
   # -------
