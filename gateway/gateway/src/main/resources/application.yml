@@ -14,26 +14,26 @@ spring:
             - Path=/customer/**
           filters:
             - StripPrefix=1
-            # -------
             - name: RequestRateLimiter
               args:
                 key-resolver: "#{@remoteAddrKeyResolver}"
                 redis-rate-limiter.replenishRate: 1
                 redis-rate-limiter.burstCapacity: 5
-            # -------
             - AddResponseHeader=X-Response-Default-Foo, Default-Bar
+#            - Retry=5
             - name: Hystrix
               args:
                 name: fallbackcmd
                 fallbackUri: forward:/fallback
       default-filters:
         - Elapsed=true
-  # -------
+      httpclient:
+        pool:
+          acquire-timeout: 10000
   redis:
     host: localhost
     port: 6379
     database: 0
-  # -------
 server:
   port: 10000
 eureka:
