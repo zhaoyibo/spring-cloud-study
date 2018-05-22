@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: admin-server
+  security:
+    user:
+      name: "admin"
+      password: "admin"
+server:
+  port: 18080
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_SERVICE_URL:http://localhost:7000}/eureka/
+  instance:
+    metadata-map:
+      user.name: "client"
+      user.password: "client"
