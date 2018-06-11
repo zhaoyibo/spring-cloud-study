@@ -27,6 +27,12 @@ spring:
                 fallbackUri: forward:/fallback
       default-filters:
         - Elapsed=true
+        # fail with "java.lang.IllegalArgumentException: No Configuration found for route service_customer"
+#        - name: RequestRateLimiter
+#          args:
+#            key-resolver: "#{@remoteAddrKeyResolver}"
+#            redis-rate-limiter.replenishRate: 1
+#            redis-rate-limiter.burstCapacity: 5
       httpclient:
         pool:
           acquire-timeout: 10000
