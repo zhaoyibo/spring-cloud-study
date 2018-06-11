@@ -22,8 +22,9 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
+        <!--<spring-boot-admin.version>2.0.0-SNAPSHOT</spring-boot-admin.version>-->
         <spring-boot-admin.version>2.0.0</spring-boot-admin.version>
-        <spring-cloud.version>Finchley.BUILD-SNAPSHOT</spring-cloud.version>
+        <spring-cloud.version>Finchley.RC2</spring-cloud.version>
     </properties>
 
     <dependencies>
@@ -105,6 +106,22 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
+
+        <!-- If you want to use snapshot builds, open it. -->
+        <!--
+        <repository>
+            <id>sonatype-nexus-snapshots</id>
+            <name>Sonatype Nexus Snapshots</name>
+            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+        </repository>
+        -->
+
     </repositories>
 
 </project>
