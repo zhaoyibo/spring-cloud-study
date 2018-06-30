@@ -1,20 +1,20 @@
 spring:
   application:
     name: user
-  security:
-    user:
-      name: "client"
-      password: "client"
-  boot:
-    admin:
-      client:
-        url: http://localhost:18080
-        username: "admin"
-        password: "admin"
-        instance:
-          metadata:
-            user.name: ${spring.security.user.name}
-            user.password: ${spring.security.user.password}
+#  security:
+#    user:
+#      name: "client"
+#      password: "client"
+#  boot:
+#    admin:
+#      client:
+#        url: http://localhost:18080
+#        username: "admin"
+#        password: "admin"
+#        instance:
+#          metadata:
+#            user.name: ${spring.security.user.name}
+#            user.password: ${spring.security.user.password}
 eureka:
   instance:
     leaseRenewalIntervalInSeconds: 10

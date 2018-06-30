@@ -1,17 +1,29 @@
 spring:
   application:
     name: admin-server
-  security:
-    user:
-      name: "admin"
-      password: "admin"
+#  security:
+#    user:
+#      name: "admin"
+#      password: "admin"
 server:
   port: 18080
 eureka:
   client:
+    registryFetchIntervalSeconds: 5
     service-url:
       defaultZone: ${EUREKA_SERVICE_URL:http://localhost:7000}/eureka/
   instance:
-    metadata-map:
-      user.name: "client"
-      user.password: "client"
+    leaseRenewalIntervalInSeconds: 10
+    health-check-url-path: /actuator/health
+#    metadata-map:
+#      user.name: "client"
+#      user.password: "client"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS
