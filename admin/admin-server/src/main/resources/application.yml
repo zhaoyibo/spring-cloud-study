@@ -1,10 +1,10 @@
 spring:
   application:
     name: admin-server
-#  security:
-#    user:
-#      name: "admin"
-#      password: "admin"
+  security:
+    user:
+      name: "admin"
+      password: "admin"
 server:
   port: 18080
 eureka:
@@ -15,9 +15,9 @@ eureka:
   instance:
     leaseRenewalIntervalInSeconds: 10
     health-check-url-path: /actuator/health
-#    metadata-map:
-#      user.name: "client"
-#      user.password: "client"
+    metadata-map:
+      user.name: ${spring.security.user.name}
+      user.password: ${spring.security.user.password}
 
 management:
   endpoints:
