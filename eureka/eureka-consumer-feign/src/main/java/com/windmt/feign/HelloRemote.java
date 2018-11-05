@@ -14,6 +14,7 @@ public interface HelloRemote {
 
     /**
      * 绑定 eureka-producer 服务的 /hello/ 接口
+     *
      * @param name
      * @return
      */

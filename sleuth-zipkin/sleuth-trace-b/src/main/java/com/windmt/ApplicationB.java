@@ -11,10 +11,10 @@ import reactor.core.publisher.Mono;
  */
 @RestController
 @SpringBootApplication
-public class Application {
+public class ApplicationB {
 
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        SpringApplication.run(ApplicationB.class, args);
     }
 
     @GetMapping("/trace-b")

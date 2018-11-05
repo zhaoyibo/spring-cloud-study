@@ -7,9 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author yibo
  */
 @SpringBootApplication
-public class SpringCloudConfigClientApplication {
+public class ConfigClientApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringCloudConfigClientApplication.class, args);
+        SpringApplication.run(ConfigClientApplication.class, args);
     }
 }

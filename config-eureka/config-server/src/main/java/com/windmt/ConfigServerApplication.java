@@ -7,8 +7,8 @@ import org.springframework.cloud.config.server.EnableConfigServer;
 /**
  * @author yibo
  */
-@SpringBootApplication
 @EnableConfigServer
+@SpringBootApplication
 public class ConfigServerApplication {
 
     public static void main(String[] args) {

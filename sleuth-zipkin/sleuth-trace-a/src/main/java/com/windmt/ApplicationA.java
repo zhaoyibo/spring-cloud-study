@@ -15,10 +15,10 @@ import reactor.core.publisher.Mono;
  */
 @RestController
 @SpringBootApplication
-public class Application {
+public class ApplicationA {
 
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        SpringApplication.run(ApplicationA.class, args);
     }
 
     @Autowired

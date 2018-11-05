@@ -1,7 +1,22 @@
 spring:
   application:
     name: turbine-stream
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+server:
+  port: 8080
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:7000/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      cors:
+        allowed-origins: "*"
+        allowed-methods: "*"
