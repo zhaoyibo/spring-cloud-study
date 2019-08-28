@@ -4,11 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.windmt.springcloud</groupId>
-    <artifactId>eureka-root</artifactId>
+    <artifactId>eureka-services</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>eureka-root</name>
+    <name>eureka-services</name>
     <description>Spring Cloud Learning Project - Eureka</description>
 
     <parent>
@@ -55,7 +55,6 @@
     </build>
 
     <modules>
-        <module>eureka-server</module>
         <module>eureka-producer</module>
         <module>eureka-consumer</module>
         <module>eureka-consumer-ribbon</module>

@@ -3,12 +3,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>eureka-consumer-ribbon</artifactId>
+    <artifactId>eureka-consumer</artifactId>
     <packaging>jar</packaging>
 
     <parent>
         <groupId>com.windmt.springcloud</groupId>
-        <artifactId>eureka-root</artifactId>
+        <artifactId>eureka-services</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
@@ -22,5 +22,6 @@
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
     </dependencies>
+
 
 </project>

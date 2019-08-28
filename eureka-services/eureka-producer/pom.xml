@@ -8,7 +8,7 @@
 
     <parent>
         <groupId>com.windmt.springcloud</groupId>
-        <artifactId>eureka-root</artifactId>
+        <artifactId>eureka-services</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
