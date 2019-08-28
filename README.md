@@ -12,8 +12,7 @@ Spring Cloud 实践学习案例，由浅入深一步一步学习 Spring Cloud，
 使用以下命令可以直接拉取使用镜像：
 
 ```shell script
-docker pull haoyizebo/eureak-server
-docker run --name=eureka-server -p 8761:8761 -t haoyizebo/eureka-server
+docker run --name eureka-server -p 8761:8761 -t haoyizebo/eureka-server:latest
 ```
 
 查看 log
