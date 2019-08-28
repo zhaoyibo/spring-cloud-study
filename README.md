@@ -4,17 +4,31 @@
 
 Spring Cloud 实践学习案例，由浅入深一步一步学习 Spring Cloud，是 Spring Cloud 初学者及核心技术巩固的最佳实践。
 
-## Eureka Server
+## Docker 支持
 
-服务注册几乎每次都要用到，为了方便我做了一个 Dockerfile。
+hosts:
+
+```
+eureka-server 127.0.0.1
+```
+
+创建 network
+
+```shell
+docker network create micro-service
+```
+
+### Eureka Server
+
+服务注册基本上每次都要用到，为了方便我做了一个 Dockerfile。
 使用以下命令可以直接拉取使用镜像：
 
 ```shell script
-docker run --name eureka-server -p 8761:8761 -t haoyizebo/eureka-server:latest
+docker run --rm --name eureka-server --network micro-service -p 8761:8761 haoyizebo/eureka-server:latest
 ```
 
-查看 log
+### Producer
 
-```shell script
-docker container logs -f eureka-server
+```shell
+docker run --rm --name eureka-producer --network micro-service -p 8080:8080 haoyizebo/eureka-producer:latest
 ```

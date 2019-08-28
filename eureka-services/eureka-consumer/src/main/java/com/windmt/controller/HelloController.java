@@ -23,11 +23,11 @@ public class HelloController {
     @Autowired
     private RestTemplate restTemplate;
 
-    @GetMapping("/")
+    @GetMapping("")
     public String hello(@RequestParam String name) {
         name += "!";
         ServiceInstance instance = client.choose("eureka-producer");
-        String url = "http://" + instance.getHost() + ":" + instance.getPort() + "/hello/?name=" + name;
+        String url = "http://" + instance.getHost() + ":" + instance.getPort() + "/hello?name=" + name;
         return restTemplate.getForObject(url, String.class);
     }
 

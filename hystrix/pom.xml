@@ -58,8 +58,6 @@
 
     <modules>
         <module>eureka-consumer-feign-hystrix</module>
-        <module>eureka-producer</module>
-        <module>eureka-server</module>
     </modules>
 
 </project>

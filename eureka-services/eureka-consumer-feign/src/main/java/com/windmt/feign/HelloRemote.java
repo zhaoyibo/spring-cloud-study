@@ -18,7 +18,7 @@ public interface HelloRemote {
      * @param name
      * @return
      */
-    @GetMapping("/hello/")
+    @GetMapping("/hello")
     String hello(@RequestParam(value = "name") String name);
 
 }

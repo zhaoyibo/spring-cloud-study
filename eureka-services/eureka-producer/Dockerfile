@@ -5,6 +5,6 @@ MAINTAINER yibo haoyizebo@mail.com
 ARG JAR_FILE
 ADD ${JAR_FILE} app.jar
 
-EXPOSE 8761
+EXPOSE 8080
 
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]

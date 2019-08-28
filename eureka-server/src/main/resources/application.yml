@@ -2,13 +2,13 @@ spring:
   application:
     name: eureka-server
   profiles:
-    active: single
+    active: default
 server:
   port: 8761
 
 ---
 spring:
-  profiles: single
+  profiles: default
 eureka:
   instance:
     hostname: localhost
