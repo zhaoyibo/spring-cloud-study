@@ -6,12 +6,6 @@ Spring Cloud 实践学习案例，由浅入深一步一步学习 Spring Cloud，
 
 ## Docker 支持
 
-hosts:
-
-```
-eureka-server 127.0.0.1
-```
-
 创建 network
 
 ```shell script
