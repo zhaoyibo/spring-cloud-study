@@ -6,6 +6,8 @@ Spring Cloud 实践学习案例，由浅入深一步一步学习 Spring Cloud，
 
 ## Docker 支持
 
+> 如果使用 Docker for Mac 请先参考 https://windmt.com/2019/08/30/docker-for-mac-network/
+
 创建 network
 
 ```shell script
