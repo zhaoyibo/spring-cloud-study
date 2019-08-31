@@ -11,9 +11,9 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @EnableHystrix
 @EnableFeignClients
 @SpringBootApplication
-public class EurekaConsumerFeignApplication {
+public class EurekaConsumerFeignHystrixApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(EurekaConsumerFeignApplication.class, args);
+        SpringApplication.run(EurekaConsumerFeignHystrixApplication.class, args);
     }
 }

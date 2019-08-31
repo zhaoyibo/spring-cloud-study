@@ -14,7 +14,7 @@ eureka-server 127.0.0.1
 
 创建 network
 
-```shell
+```shell script
 docker network create micro-service
 ```
 
@@ -29,6 +29,6 @@ docker run --rm --name eureka-server --network micro-service -p 8761:8761 haoyiz
 
 ### Producer
 
-```shell
+```shell script
 docker run --rm --name eureka-producer --network micro-service -p 8080:8080 haoyizebo/eureka-producer:latest
 ```

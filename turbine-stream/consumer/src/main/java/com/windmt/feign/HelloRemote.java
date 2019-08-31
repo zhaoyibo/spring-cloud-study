@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @author: yibo
  * @create: 2018-04-18 09:48
  **/
+@Component
 @FeignClient(name = "producer", fallback = HelloRemote.HelloHystrix.class)
 public interface HelloRemote {
 

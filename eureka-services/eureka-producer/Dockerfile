@@ -2,6 +2,8 @@ FROM java:8
 
 MAINTAINER yibo haoyizebo@mail.com
 
+VOLUME /tmp
+
 ARG JAR_FILE
 ADD ${JAR_FILE} app.jar
 

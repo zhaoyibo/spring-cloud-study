@@ -4,9 +4,9 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:7000/eureka/
+      defaultZone: http://localhost:8761/eureka/
 server:
-  port: 9004
+  port: 8989
 feign:
   hystrix:
     enabled: true
