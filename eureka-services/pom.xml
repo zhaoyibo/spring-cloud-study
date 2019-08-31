@@ -5,7 +5,7 @@
 
     <groupId>com.windmt.springcloud</groupId>
     <artifactId>eureka-services</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>eureka-services</name>
@@ -19,6 +19,7 @@
     </parent>
 
     <properties>
+        <docker.image.prefix>haoyizebo</docker.image.prefix>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
@@ -50,6 +51,19 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>dockerfile-maven-plugin</artifactId>
+                <version>1.4.12</version>
+                <configuration>
+                    <repository>${docker.image.prefix}/${project.artifactId}</repository>
+                    <!--                    <tag>v${project.version}</tag>-->
+                    <buildArgs>
+                        <JAR_FILE>target/${project.build.finalName}.jar</JAR_FILE>
+                    </buildArgs>
+                    <finalName>${project.build.finalName}</finalName>
+                </configuration>
             </plugin>
         </plugins>
     </build>

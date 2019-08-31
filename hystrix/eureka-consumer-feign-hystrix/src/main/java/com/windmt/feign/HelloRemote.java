@@ -13,12 +13,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface HelloRemote {
 
     /**
-     * 绑定 eureka-producer 服务的 /hello/ 接口
+     * 绑定 eureka-producer 服务的 /hello 接口
      *
      * @param name
      * @return
      */
-    @GetMapping("/hello/")
+    @GetMapping("/hello")
     String hello(@RequestParam(value = "name") String name);
 
 }

@@ -6,7 +6,7 @@
 
     <groupId>com.windmt.springcloud</groupId>
     <artifactId>config-eureka-bus-root</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>config-eureka-bus-root</name>

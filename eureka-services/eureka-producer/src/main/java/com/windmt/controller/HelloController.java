@@ -18,7 +18,7 @@ public class HelloController {
     @Value("${config.producer.instance:0}")
     private int instance;
 
-    @GetMapping("/")
+    @GetMapping("")
     public String hello(@RequestParam String name) {
         return "[" + instance + "]" + "Hello, " + name + " " + new Date();
     }

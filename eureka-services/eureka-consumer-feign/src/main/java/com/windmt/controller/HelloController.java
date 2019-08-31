@@ -17,7 +17,7 @@ public class HelloController {
     @Autowired
     HelloRemote helloRemote;
 
-    @GetMapping("/")
+    @GetMapping("")
     public String index(@RequestParam("name") String name) {
         return helloRemote.hello(name + "!");
     }

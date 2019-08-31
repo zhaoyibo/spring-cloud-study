@@ -17,10 +17,10 @@ public class HelloRibbonController {
     @Autowired
     private RestTemplate restTemplate;
 
-    @GetMapping("/")
+    @GetMapping("")
     public String hello(@RequestParam String name) {
         name += "!";
-        String url = "http://eureka-producer/hello/?name=" + name;
+        String url = "http://eureka-producer/hello?name=" + name;
         return restTemplate.getForObject(url, String.class);
     }
 

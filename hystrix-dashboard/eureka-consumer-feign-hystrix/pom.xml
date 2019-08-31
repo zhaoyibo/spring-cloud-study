@@ -9,7 +9,7 @@
     <parent>
         <groupId>com.windmt.springcloud</groupId>
         <artifactId>hystrix-dashboard-root</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>1.0-SNAPSHOT</version>
     </parent>
 
     <dependencies>
