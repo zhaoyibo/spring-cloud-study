@@ -1,12 +1,12 @@
 # Spring Cloud 实践学习案例
 
-> 转载请标明出处：https://windmt.com/tags/Spring-Cloud/ 本文出自 [Yibo's blog](https://windmt.com)
+> 转载请标明出处：https://haoyizebo.com/tags/Spring-Cloud/ 本文出自 [好一则博](https://haoyizebo.com)
 
 Spring Cloud 实践学习案例，由浅入深一步一步学习 Spring Cloud，是 Spring Cloud 初学者及核心技术巩固的最佳实践。
 
 ## Docker 支持
 
-> 如果使用 Docker for Mac 请先参考 https://windmt.com/2019/08/30/docker-for-mac-network/
+> 如果使用 Docker for Mac 请先参考 https://haoyizebo.com/2019/08/30/docker-for-mac-network/
 
 创建 network
 
